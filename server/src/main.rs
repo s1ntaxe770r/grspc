@@ -19,9 +19,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .await?;
     Ok(())
 }
-
 #[derive(Debug,Default)]
-pub struct HelloService {}
+pub struct HelloService {
+}
 
 #[tonic::async_trait]
 impl Hello for HelloService {
